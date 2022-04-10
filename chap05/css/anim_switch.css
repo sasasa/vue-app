@@ -1,0 +1,18 @@
+.panel {
+  border: 1px solid #000;
+  width: 350px;
+  overflow: hidden;
+}
+
+.v-enter-active, .v-leave-active {
+  transition: opacity 5s;
+  
+}
+
+.v-leave-active {
+  position: absolute;
+}
+
+.v-enter-from, .v-leave-to {
+  opacity: 0.0;
+}

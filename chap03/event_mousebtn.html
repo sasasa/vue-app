@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet" href="css/event_mousebtn.css" />
+</head>
+<body>
+<div id="app">
+  <div id="main"
+    v-on:click.left="onleftclick"
+    v-on:click.right.prevent="onrightclick">
+    <!-- <div id="main"
+    v-on:click.left="onleftclick"
+    v-on:click.ctrl.exact.right.prevent="onrightclick"> -->
+    ボタンの右クリックでコンテキストメニューを表示します。
+  </div>
+  <ul class="cxt" v-bind:style="pos" v-show="show">
+    <li><a href="https://wings.msn.to/index.php/-/A-08/">ヘルプ</a></li>
+    <li><a href="https://wings.msn.to/index.php/-/B-14/">質問掲示板</a></li>
+    <li><a href="https://wings.msn.to/index.php/-/B-11/">よくある質問一覧</a></li>
+  </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/event_mousebtn.js"></script>
+</body>
+</html>

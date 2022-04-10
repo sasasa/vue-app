@@ -1,0 +1,35 @@
+.cxt {
+  position: absolute;
+  z-index: 99;
+  padding: 0px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #e8e8e8;
+}
+
+.cxt li {
+  padding: 5px 15px 5px 15px;
+  list-style: none;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  color: #000;
+  cursor: pointer;
+}
+
+.cxt a {
+  color: #000;
+  text-decoration: none;
+}
+
+.cxt li.sep {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+#main {
+position: relative;
+border: solid 1px #000;
+height: 300px;
+width: 400px;
+}

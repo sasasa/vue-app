@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <p>{{ $t('greet.morning') }}</p>
+  <p>{{ $t('greet.hello', { name: '山田' }) }}</p>
+  <!-- <p>{{ $t('greet.hello', { name }) }}</p> -->
+  <!-- <p>{{ $t('greet.hello', ['山田']) }}</p> -->
+  <p>{{ $t('greet.morning_set') }}</p>
+  <p>{{ $t('greet.mail') }}</p>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-i18n@9.1.9"></script>
+<script src="js/i18n_msg.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#panel {
+  border: 1px solid #000;
+  width: 350px;
+  overflow: hidden;
+}
+
+.panel-enter-active, .panel-leave-active {
+  transition: opacity 5s;
+}
+
+.panel-enter-from, .panel-leave-to {
+  opacity: 0.0;
+}

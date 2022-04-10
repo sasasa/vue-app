@@ -1,0 +1,11 @@
+.el-carousel__item {
+  height: 250px;
+  background-color: #98e7a3;
+  color: #000;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.el-carousel__item div {
+  margin: 15px;
+}

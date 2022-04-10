@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <my-input v-model="message"></my-input>
+  <!-- <my-input v-bind:model-value="message"
+    v-on:update:model-value="message = $event"></my-input> -->
+  <p>入力値：{{message}}</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_basic_prop.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-plus@2.0.1/dist/index.css" />
+<link rel="stylesheet" href="css/element.css" />
+</head>
+<body>
+<div id="app">
+  <el-carousel v-bind:interval="5000" arrow="hover">
+    <el-carousel-item>
+      <div>
+        <h3>WINGSプロジェクト</h3>
+        <p>ようこそ！WINGSプロジェクトへ</p>
+        <img src="https://wings.msn.to/image/wings.jpg" />
+      </div>
+    </el-carousel-item>
+    <el-carousel-item>
+        <div>
+          <h3>メンバー募集中！</h3>
+          一緒に執筆のお仕事をしてみませんか？<br />
+          現在、WINGSでは執筆メンバーを募集しています。
+        </div>
+    </el-carousel-item>
+    <el-carousel-item>
+      <div>
+        <h3>What's New</h3>
+        WINGSの最新情報です。<br />
+        RSSでも配信しています。是非ご覧ください。<br />
+        <a href="https://wings.msn.to/index.php/-/A-02/">最新情報一覧</a>
+      </div>
+    </el-carousel-item>
+  </el-carousel>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/element-plus@2.0.1/dist/index.full.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/element-plus@2.0.1/dist/locale/ja.js"></script>
+<script src="js/element.js"></script>
+</body>
+</html>

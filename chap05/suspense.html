@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <suspense>
+    <template #default>
+      <my-heavy />
+    </template>
+    <template #fallback>
+      Now Loading...
+    </template>
+  </suspense>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/suspense.js"></script>
+</body>
+</html>

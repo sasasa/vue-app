@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <my-input v-model:year="current_y"
+    v-model:month="current_m"
+    v-model:day="current_d"></my-input>
+  <p>{{current_y}}年 {{current_m}}月 {{current_d}}日</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_arg_multi.js"></script>
+</body>
+</html>

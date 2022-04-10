@@ -1,0 +1,85 @@
+#panel {
+  border: 1px solid #000;
+  width: 350px;
+  overflow: hidden;
+}
+
+/* スライドアップ／スライドダウン */
+
+.v-enter-active, .v-leave-active {
+  transition: height 1s;
+}
+
+.v-enter-from {
+  height: 0px;
+}
+
+.v-enter-to {
+  height: 180px;
+}
+
+.v-leave-from {
+  height: 180px;
+}
+
+.v-leave-to {
+  height: 0px;
+} 
+
+
+/* フェードイン／アウト */
+/*
+.v-enter-active, .v-leave-active {
+  transition: opacity 5s;
+}
+
+.v-enter-from {
+  opacity: 0.0;
+}
+
+.v-enter-to {
+  opacity: 1.0;
+}
+
+.v-leave-from {
+  opacity: 1.0;
+}
+
+.v-leave-to {
+  opacity: 0.0;
+} 
+*/
+
+/* フェードイン／アウトのコンパクト化 */
+/*
+.v-enter-active, .v-leave-active {
+  transition: opacity 5s;
+}
+
+.v-enter-from, .v-leave-to {
+  opacity: 0.0;
+}
+*/
+
+/* キーフレーム */
+/*
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.v-enter-active {
+  animation: slide-in 1.5s;
+}
+
+.v-leave-active {
+  animation: slide-in 1.5s reverse;
+}
+*/

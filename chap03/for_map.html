@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="[key, value] in map">
+        {{key}}：{{value}}
+      </li>
+
+      <!-- キーだけを列挙 -->
+      <!-- <li v-for="[key] in map">
+        {{key}}
+      </li> -->
+
+      <!-- 値だけを列挙 -->
+      <!-- <li v-for="[, value] in map">
+        {{value}}
+      </li> -->
+
+      <!-- 「v-for="key in map"」とした場合 -->
+      <!-- <li v-for="key in map">
+        {{key}}
+      </li> -->
+    </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/for_map.js"></script>
+</body>
+</html>

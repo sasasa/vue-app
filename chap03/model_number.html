@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form>
+    <label for="temperature">サウナの温度：</label>
+    <input type="text" id="temperature" v-model.number="temperature"
+      v-on:change="onchange" />
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_number.js"></script>
+</body>
+</html>

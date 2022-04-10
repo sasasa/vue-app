@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <select v-model="color">
+    <option value="yellow">黄色</option>
+    <option value="red">赤色</option>
+    <option value="blue">青色</option>
+  </select>
+    <p>WINGSプロジェクトで一緒に執筆してみませんか？
+      <span v-highlight.border.once="color">メンバー募集中！</span>
+      是非、ご応募ください。</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/dir_mod.js"></script>
+</body>
+</html>

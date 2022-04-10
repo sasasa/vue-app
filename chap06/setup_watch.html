@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <my-counter v-bind:init="init"></my-counter>
+  <input type="button" value="初期化" v-on:click="onclick" />
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/setup_watch.js"></script>
+</body>
+</html>

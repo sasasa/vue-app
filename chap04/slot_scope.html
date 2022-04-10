@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <my-book>
+    <!-- {{book.title}}（{{book.price}}円） -->
+    
+    <template v-slot:default="slotProp">
+      {{slotProp.book.title}}（{{slotProp.book.price}}円）
+    </template>
+  </my-book>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/slot_scope.js"></script>
+</body>
+</html>

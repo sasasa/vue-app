@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form method="POST" v-on:submit="onsubmit">
+    <label for="email">メールアドレス：</label>
+    <input id="email" name="email" type="email" />
+    <input type="submit" value="送信" />
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/event_submit.js"></script>
+</body>
+</html>

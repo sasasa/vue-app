@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+<link rel="stylesheet" href="css/anim_custom.css" />
+</head>
+<body>
+<div id="app">
+  <input type="button" value="表示／非表示" v-on:click="onclick" />
+  <transition
+    enter-active-class="animate__animated animate__rollIn" 
+    leave-active-class="animate__animated animate__rollOut">
+    <div id="panel" v-show="flag">
+      WINGSプロジェクトで一緒に執筆の仕事をしてみませんか？<br />
+      ただいまメンバー募集中！<br />
+      是非、ご応募ください。
+    </div>
+  </transition>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/anim_custom.js"></script>
+</body>
+</html>

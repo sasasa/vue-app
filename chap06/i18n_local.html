@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <p>{{ $d(Date.now(), 'short') }}</p>
+  <p>{{ $d(Date.now(), 'long') }}</p>
+  <p>{{ $n(1234.5678, 'currency') }}</p>
+  <p>{{ $n(1234.5678, 'number') }}</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-i18n@9.1.9"></script>
+<script src="js/i18n_local.js"></script>
+</body>
+</html>

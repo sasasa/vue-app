@@ -1,0 +1,33 @@
+#container {
+  width: 450px;
+}
+
+#container > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container > ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 160%;
+  width: 150px;
+  height: 40px;
+}
+
+
+#container > ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8f1b3;
+  color: #000;
+  border: solid 1px Black;
+}
+
+#container > div {
+  border: 1px solid #c0c0c0;
+  background-color: #fcfbf4;
+  border-top: none;
+  padding: 15px;
+}

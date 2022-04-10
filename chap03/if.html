@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form>
+    <label for="show">表示／非表示</label>
+    <input type="checkbox" id="show" v-model="show" />
+  </form>
+  <div id="panel" v-if="show">
+  <!-- <div id="panel" v-show="show"> -->
+    <h3>RSSフィードについて</h3>
+    <div>WINGSでは、弊社執筆の書籍／雑誌／Web記事の最新50件をRSS形式で提供しています。<br />
+    RSSとはなにか、その使い方を含め、ご案内します。</div>
+  </div>
+  <!-- <div v-else>現在、非表示状態です。</div> -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/if.js"></script>
+</body>
+</html>

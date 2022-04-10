@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet" href="css/event_prevent.css" />
+</head>
+<body>
+<div id="app">
+  <div id="main" v-on:contextmenu.prevent>
+    この領域では、コンテキストメニューは表示されません。
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/event_prevent.js"></script>
+</body>
+</html>

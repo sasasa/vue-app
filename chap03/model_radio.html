@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form>
+    <label for="dog">いぬ</label>
+    <input type="radio" id="dog" value="いぬ" v-model="pet" />
+    <br />
+    <label for="cat">ねこ</label>
+    <input type="radio" id="cat" value="ねこ" v-model="pet" />
+    <br />
+    <label for="other">その他</label>
+    <input type="radio" id="other" value="その他" v-model="pet" />
+  </form>
+  <p> ペット：{{ pet }}</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_radio.js"></script>
+</body>
+</html>

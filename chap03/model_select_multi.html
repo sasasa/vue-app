@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+<form>
+  <div>お使いのOSは？</div>
+  <select v-model="os" multiple size="3">
+    <option>Windows</option>
+    <option>Linux</option>
+    <option>macOS</option>
+  </select>
+</form>
+<p> 回答：{{ os }}</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_select_multi.js"></script>
+</body>
+</html>

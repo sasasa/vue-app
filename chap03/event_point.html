@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+<link rel="stylesheet" href="css/event_point.css" />
+</head>
+<body>
+<div id="app">
+  <div id="main" v-on:mousemove="onmousemove">
+      screen: {{ screenX }}/{{ screenY }}<br />
+      page: {{ pageX }}/{{ pageY }}<br />
+      client: {{ clientX }}/{{ clientY }}<br />
+      offset: {{ offsetX }}/{{ offsetY }}
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/event_point.js"></script>
+</body>
+</html>

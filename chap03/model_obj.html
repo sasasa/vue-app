@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form>
+    <label for="million">百万：</label>
+    <input type="radio" id="million" v-model="unit" v-on:change="onchange"
+      v-bind:value="{ name: '百万', size: 1000000 }" /><br />
+    <label for="billion">十億：</label>
+    <input type="radio" id="billion" v-model="unit" v-on:change="onchange"
+      v-bind:value="{ name: '十億', size: 1000000000 }" /><br />
+    <label for="trillion">一兆：</label>
+    <input type="radio" id="trillion" v-model="unit" v-on:change="onchange"
+      v-bind:value="{ name: '一兆', size: 1000000000000 }" />
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/model_obj.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <form>
+      <input type="button" value="変更" v-on:click="onclick" />
+    </form>
+    <ul>
+      <li v-for="item in list">{{ item }}</li>
+    </ul>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="js/for_change_v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <select v-model="attr">
+    <option value="height">高さ</opton>
+    <option value="width">幅</opton>
+  </select>：
+  <input type="text" size="5" v-model="size" /><br />
+  <img src="https://wings.msn.to/image/wings.jpg" v-bind:[attr]="size" />
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/bind_dynamic.js"></script>
+</body>
+</html>

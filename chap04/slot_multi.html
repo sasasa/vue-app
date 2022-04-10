@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <my-slot>
+    <template v-slot:header>
+      <h3>ようこそVue.jsへ</h3>
+    </template>
+
+    <p>一緒に勉強しましょう。</p>
+
+    <template v-slot:footer>
+      <span>Written by WINGSプロジェクト</span>
+    </template>
+
+    <p>質問は掲示板へどうぞ。</p>
+  </my-slot>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/slot_multi.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.v-enter-active, .v-leave-active, .v-move {
+  transition: transform 1s;
+}
+
+.v-enter-from, .v-leave-to {
+  transform: translateX(80%);
+}
+
+.v-leave-active {
+  position: absolute;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+  <form>
+    <label for="holiday">祝日：</label><br />
+    <select id="holiday" v-model="holiday">
+      <option value="">祝日を選択してください。</option>
+      <option value="new">元日</option>
+      <option value="child">こどもの日</option>
+      <option value="culture">文化の日</option>
+      <option value="labor">勤労感謝の日</option>
+    </select>
+  </form>
+  <div v-if="holiday==='new'">1月1日。年のはじめを祝う</div>
+  <div v-else-if="holiday==='child'">5月5日。こどもの人格を重んじ、こどもの幸福をはかるとともに、母に感謝する</div>
+  <div v-else-if="holiday==='culture'">11月3日。自由と平和を愛し、文化をすすめる</div>
+  <div v-else-if="holiday==='labor'">11月23日。勤労をたつとび、生産を祝い、国民たがいに感謝しあう</div>
+  <div v-else>なにも選択されていません。</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+<script src="js/if_else.js"></script>
+</body>
+</html>
